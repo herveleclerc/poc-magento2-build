@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 echo "Installing latest Magento2 OpenSource..."
+
+composer selfupdate --1
+
 composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=${MAGENTO_VERSION} src
 
 echo "Installing CI/CD packages..."
