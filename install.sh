@@ -9,6 +9,7 @@ COMPOSER_MEMORY_LIMIT=-1 composer create-project --repository-url=https://repo.m
 
 
 echo "Installing CI/CD packages..."
+
 cd src
 
 COMPOSER_MEMORY_LIMIT=-1 composer require --no-update --dev magento/ece-tools magento/magento-cloud-docker
