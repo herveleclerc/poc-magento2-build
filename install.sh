@@ -5,7 +5,7 @@ composer create-project --repository-url=https://repo.magento.com/ magento/proje
 
 echo "Installing CI/CD packages..."
 cd src
-composer require phoenix-media/magento2-cloud-build --no-update
-composer update
-vendor/bin/px-cloud-build-install
+#composer require phoenix-media/magento2-cloud-build --no-update
+#composer update
+#vendor/bin/px-cloud-build-install
 cd ..
