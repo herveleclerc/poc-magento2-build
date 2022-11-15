@@ -13,7 +13,7 @@ cd src
 
 COMPOSER_MEMORY_LIMIT=-1 composer require --no-update --dev magento/ece-tools magento/magento-cloud-docker
 
-composer require herleclerc/magento2-cloud-build --no-update
+composer require herveleclerc/magento2-cloud-build --no-update
 
 composer update
 
