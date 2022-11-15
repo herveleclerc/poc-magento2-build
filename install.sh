@@ -2,9 +2,9 @@
 
 echo "Installing latest Magento2 OpenSource..."
 
-composer selfupdate --1
+COMPOSER_MEMORY_LIMIT=-1 composer selfupdate --1
 
-composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=${MAGENTO_VERSION} src
+COMPOSER_MEMORY_LIMIT=-1 composer create-project --repository-url=https://repo.magento.com/ magento/project-community-edition=${MAGENTO_VERSION} src
 
 echo "Installing CI/CD packages..."
 cd src
